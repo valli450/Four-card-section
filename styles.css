@@ -1,0 +1,155 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Style */
+body{
+    font-family: Poppins;
+    font-size: 15px;
+    width: 90%;
+    margin: 0 auto;
+    color: hsl(229, 6%, 66%);
+}
+
+nav{
+    height: 100px;
+}
+
+.maincontent{
+    position: relative;
+    text-align: center;
+}
+
+/* Top Section */
+.toptxt{
+    margin: 10px;
+}
+
+.reg{
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+}
+
+.boldtxt{
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+}
+
+.topp{
+    margin-top: 10px;
+    font-weight: 200;
+}
+
+/* Bottom Section */
+.bottom{
+    position: relative;
+    display: block;
+    margin: 10px;
+    margin-top: 40px;
+}
+
+.supervisor{
+    border-top: 4px solid hsl(180, 62%, 55%);  
+    border-radius: 3px;
+    box-shadow: 0px 5px 10px 8px hsl(0, 0%, 94%);
+    margin-bottom: 30px; 
+    position: relative;
+    padding: 30px;
+}
+
+.suptxt{
+    text-align: left;
+}
+
+h2{
+    color: hsl(234, 12%, 34%)
+}
+
+.icon{
+    text-align: right;
+    margin-top: 30px;
+}
+
+.builder{
+    border-top: 4px solid hsl(0, 78%, 62%);  
+    border-radius: 3px;
+    box-shadow: 0px 5px 10px 8px hsl(0, 0%, 94%);
+    margin-bottom: 30px; 
+    position: relative;
+    padding: 30px;
+}
+
+.karma{
+    border-top: 4px solid hsl(34, 97%, 64%);  
+    border-radius: 3px;
+    box-shadow: 0px 5px 10px 8px hsl(0, 0%, 94%);
+    margin-bottom: 30px; 
+    position: relative;
+    padding: 30px;
+}
+
+.calc{
+    border-top: 4px solid hsl(212, 86%, 64%);  
+    border-radius: 3px;
+    box-shadow: 0px 5px 10px 8px hsl(0, 0%, 94%);
+    margin-bottom: 30px; 
+    position: relative;
+    padding: 30px;
+}
+
+/* Media */
+@media screen and (min-width: 320px){
+    body{
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 480px){
+    body{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    body{
+        width: 55%;
+    }
+}
+
+@media screen and (min-width: 920px){
+    body{ 
+        width: 80%;
+    }
+
+    .h1txt{
+        width: 60%;
+        margin: auto
+    }
+
+    .topp{
+        width: 55%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .bottom{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .supervisor,
+    .gridcenter,
+    .calc{
+        place-self: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    body{
+        width: 75%;
+    }
+}
